@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of</title>
+</head>
+<body>
+    <script>
+        const names = ["Mizan", "Ade", "Arfani"];
+        for(const name of names){
+            document.writeln(`<p>${name}</p>`);
+        }
+
+        const fullName = "Mizan Ade Arfani";
+        for(const character of fullName){
+            document.writeln(`<p>${character}</p>`);
+        }
+
+        //objek tidak bisa memakai for of karena bukan iterable
+
+        // const person ={
+        //     firstName: "Mizan",
+        //     lastName:"Ade Arfani"
+        // };
+        // for(const name of person){
+        //     document.writeln(`<p>${name}</p>`)
+        //}
+    </script>
+    
+</body>
+</html>

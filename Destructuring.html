@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        {const names = ["mizan", "ade", "arfani", "iyan", "hikam", "pado"];
+         [firstName, middleName, lastName, ...others] = names;
+
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+        console.log(others);}
+
+        {const person ={
+            firstName: "Mizan",
+            lastName: "Ade",
+            address: {
+                street:"jalan harjosari",
+                city: "Kab. Tegal",
+                country:"Indonesia"
+            },
+            hobby: "games, baca komik, nonton film",
+            instagram : "mizan_a.a"
+        };
+
+        let {lastName, firstName, address:{city, street, country,}, ...others} = person;
+
+        console.log(firstName);
+        console.log(lastName);
+        console.log(street);
+        console.log(others);
+    }
+
+    {function displayPerson({firstName, middleName, lastName}){
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+    }
+
+    const person = {
+        firstName:"Mizan",
+        middleName:"Ade",
+        lastName: "Arfani",
+    }
+
+    displayPerson(person);
+}
+
+    {
+        function sum([first, second]){
+            return first+second;
+        }
+        
+        console.log(sum([1,1]));
+        console.log(sum([5,5]));
+
+    }
+
+    //default value destructuring
+    {
+        const names = ["Mizan"];
+        const[firstname, middleName = "gatau tanya coba", lastName = "gax"]= names;
+
+        console.log(firstname);
+        console.log(middleName);
+        console.log(lastName);
+    }
+
+    {const person ={
+            firstName: "Mizan",
+            lastName: "Ade",
+        };
+
+        let {lastName, firstName, middleName = "gatau"} = person;
+
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+        
+    }
+    </script>
+    
+</body>
+</html>

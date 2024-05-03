@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statement</title>
+</head>
+<body>
+    <!-- switch statement menggunakan perbandingan ==, switch statement lebih sederhana -->
+    <script>
+        const nilai ="C";
+
+        switch (nilai){
+            case "A":
+                document.writeln("<p>Wow anda keren sekali</p>")
+                break
+            case "B":
+            case "C":
+            document.writeln("<p>Anda Lulus</p>")
+            case "D":
+            document.writeln("<p>anda tidak lulus</p>")
+            default :
+            document.writeln("<p>mungkin anda salah jurusan</p>")
+            
+        }
+
+        if (nilai==="A"){
+                document.writeln("<p>Wow anda keren sekali</p>")
+            }else if(nilai==="B"||nilai==="C"){
+                document.writeln("<p>Anda Lulus</p>");
+            }else if(nilai==="D"){
+                document.writeln("<p>anda tidak lulus</p>");
+            }else{
+                ("<p>mungkin anda salah jurusan</p>");
+            }
+          
+    </script>
+</body>
+</html>

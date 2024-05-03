@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenary Operator</title>
+  </head>
+  <body>
+    <script>
+      const nilai = 30;
+      let ucapan;
+
+      if (nilai >= 75) {
+        ucapan = "selamat anda lulus";
+      } else {
+        ucapan = "silahkan coba lagi";
+      }
+      document.writeln(`<p>${ucapan}`);
+
+      ucapan =
+        nilai >= 75
+          ? "Selamat anda lulus"
+          : nilai >= 60
+          ? "nyaris"
+          : "silahkan coba lagi";
+      document.writeln(`<p>${ucapan}`);
+
+        ucapan = nilai >=65 ? "selamat anda lulus" : nilai >= 50 ? "anda tidak lulus" : "pikir aja sendiri";
+        document.writeln(`<p>${ucapan}`)
+    </script>
+  </body>
+</html>

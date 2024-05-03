@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined Variable</title>
+</head>
+<body>
+    <script>
+        //name hanya variabel doang gaada datanya jadi dia datanya undefined
+        let name;
+        if(name===undefined){
+            console.log("undefined");
+        }else{
+            console.log("defined");
+        }
+
+        //jadi kalo mau bikin variable tp datanya ntaran
+        let ppk = undefined;
+
+        //Undefined Array Value
+        const nyoba =["Mizan", "Ade"];
+
+        
+        if(nyoba[2] === undefined){
+            console.log("ini array undefined cok");
+        }else{
+            console.log("ada datanya ternyata jeng");
+        }
+
+        //delete array membuat array itu undefined juga
+        delete nyoba[1];
+        console.log(nyoba[1]);
+        //bisa juga menggunakan kode (nyoba[1]=undefined;
+        
+        // undefined juga bisa diterapkan di tipe data object
+        const person={
+           // umur : "mizan" k
+           //hapus komen diatas kalo mau ada datanya
+        };
+        if (person.umur===undefined){
+            console.log("ini tipe data object undefined")
+        }else{
+            console.log("ini ada datanya")
+        }
+    </script>
+    
+</body>
+</html>

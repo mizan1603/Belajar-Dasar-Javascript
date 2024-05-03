@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statement</title>
+</head>
+<body>
+    <script>
+        //mengakses tanpa with statement
+        
+        const person ={
+            firstName : "Mizan",
+            middleName :"Ade",
+            lastName:"Arfani"
+        }
+
+        console.log(person.firstName);
+        console.log(person.middleName);
+        console.log(person.lastName);
+
+
+        with (person){
+            console.log(firstName);
+            console.log(middleName);
+            console.log(lastName);
+        }
+
+        //with person tidak direkomendasikan penggunaanya karena membuat kode ambigu
+    </script>
+    
+</body>
+</html>

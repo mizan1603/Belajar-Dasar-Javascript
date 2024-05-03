@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+<body>
+    <!-- untuk mengecek apakah property ada didalam object atau tidak -->
+    <script>
+        const orang ={
+            firstName:"Mizan",
+            lastName:"Ade Arfani"
+        }
+
+        const result = "firstName" in orang;
+        document.writeln(`<p>${result}</p>`);
+
+        //membuat contoh lain dengan if else
+
+        const person = {
+            Nama :"Mizan Ade Arfani",
+            Umur :"21"
+        }
+        if("Umur" in person){
+            alert(`ini datanya adalah${person.Umur}`);
+        }else{
+            alert("Gaada datanya");
+        }
+
+        // tidak akan mengecek valuenya
+        const makanan ={
+            makan :"ayam",
+            minuman : "kopi",
+            cemilan : undefined
+        }
+
+        if("cemilan" in makanan){
+            alert(`ini cemilanya ${makanan.cemilan}`);
+        }else{
+            alert("gada apaapa");
+        }
+
+        //meskipun null akan dianggap true
+        const names = [null, "Mizan", null];
+        const hasil = 0 in names;
+        document.writeln(`<p>${hasil}</p>`);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong = [];
+        let arrayNama = ["Mizan","Ade", "Arfani",];
+
+        const names = [];
+//menambah data ke array dengan vararray.push(value)
+        names.push("Mizan");
+        names.push("Ade", "Arfani");
+        names.push("lagi", "belajar", "javascript");
+
+        console.table(names);
+//mengambil data dari array dengan vararray[index]
+        console.log(names[0]);
+        console.log(names[1]);
+        console.log(names[2]);
+// mengubah data array dengan vararray[index]=value
+        names[3] = "sedang";
+        console.table(names);
+//menghapus data array tapi tidak menghapus index
+        delete names[3];
+        console.table(names);
+//ini menambah data yang array kosong
+        names[3] = "ini diubah lagi";
+        names.push(1,2,3,4,5);
+        names.push(["ini","array","dalam","array"]);
+        console.table(names);
+    </script>
+    
+</body>
+</html>

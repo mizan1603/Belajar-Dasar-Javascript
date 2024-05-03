@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe data object</title>
+  </head>
+  <body>
+    <script>
+      const orang = {};
+
+      //menambah atau mengubah
+      orang["nama"] = "Mizan Ade Arfani";
+      orang["alamat"] = "Tegal";
+      orang["umur"] = "20";
+      console.table(orang);
+
+      delete orang["umur"];
+      console.table(orang);
+      //membuat object dengan properties/ attribute
+      const person = {
+        nama /*property hanya bisa satu kata kalau lebih bisa pake "" atau camel case*/:
+          "Mizan Ade Arfani",
+        "alamat lengkap": "Indonesia",
+        umur: 20,
+      };
+      //mengakses property object
+      console.info(`Nama : ${person.nama}`);
+      console.info(`Alamat : ${person["alamat lengkap"]}`);
+      console.info(`Umur : ${person.umur}`);
+
+      console.table(person);
+
+      const mizan_a = "ini variable mizan keren";
+      console.log(mizan_a);
+    </script>
+  </body>
+</html>

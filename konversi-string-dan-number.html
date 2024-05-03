@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+    <script>
+        const value1 = Number("2.8");
+        const value2 = 1;
+        const sum = value1+value2;
+
+        document.writeln(`<p>${sum}</p>`);
+        
+        document.writeln(`<p>${parseInt("1.4")}</p>`);
+        document.writeln(`<p>${parseFloat("1.4")}</p>`);
+        document.writeln(`<p>${Number("1.4")}</p>`);
+
+    // ini lagi nyoba
+        const x = "6";
+        const y = 1;
+        const jumlah = Number(x)+y;
+
+        document.writeln(`<p>${jumlah}</p>`);
+        
+        //ini to string
+        const a=1;
+        const b=1;
+        const total = a.toString()+b;
+
+        document.writeln(`<p>${total}</p>`);
+
+        //NaN(not a number)
+        document.writeln(`<p>${parseInt("1 initidak nan")}</p>`);
+        document.writeln(`<p>${parseFloat("1.4 karena akan dibaca di depan terlebih dahulu")}</p>`);
+        document.writeln(`<p>${parseFloat("kalau 1.4 ini akan nan")}</p>`);
+        document.writeln(`<p>${Number("1.4number tidak mentolerir apapun")}</p>`);
+
+        //pengecekan NaN dengan isNaN
+        const peler = "babi";
+        document.writeln(`<p>${isNaN(peler)}</p>`);
+
+    </script>
+    
+</body>
+</html>

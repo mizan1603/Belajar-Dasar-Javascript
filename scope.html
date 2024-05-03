@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        //global scope
+        let counter = 0;
+        //global scope
+        function hitMe(){
+            counter++//local scope
+        }
+
+        function other(){
+            //local scope
+        }
+
+        hitMe();
+        hitMe();
+
+        console.info(counter);
+
+        function first(){
+            //local scope
+            let firstVariable =`first`;
+            console.log(firstVariable);
+        }
+
+        function second(){
+            let secondVariable = `second`;
+            // console.log(firstVariable); //error
+        }
+
+        //global scope
+        first();
+        second();
+        // console.log(firstVariable);//error
+        // console.log(secondVariable);//error
+
+        //nested
+       
+
+    </script>
+    
+</body>
+</html>

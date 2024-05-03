@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        const name = "Mizan Ade Arfani";
+        const firstName = "Mizan";
+        const middleName = "Ade";
+        const lastName = "Arfani";
+
+        const template = `Nama : ${firstName} ${middleName} ${lastName}`;
+
+        console.log (template);
+
+        const nilai = 50;
+        const template2 = `Name : ${name}, lulus : ${nilai >= 70}`;
+        
+        console.info (template2);
+
+        // MULTILINE STRING
+        const multiline = `Nama saya Mizan
+        saya rajin dan tidak sombong
+        ini merupakan contoh multline menggunakan string template
+        jadi string template bisa pake multiline`;
+        
+
+        document.writeln("<pre>")
+        document.writeln(multiline);
+        document.writeln(contoh)
+        document.writeln("</pre>")
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+    {
+        function createAdder(value){
+            const owner ="Mizan";
+            function add(param){
+                console.info(owner);
+                return value + param;
+            }
+            return add;
+        }
+
+        const addTwo = createAdder(2);
+        /*ini kurang lebih kodenya kaya gini kalo dijabarin
+        function addTwo(param){
+            console.info("Mizan");
+            return 2 + param;
+        }*/
+        console.log(addTwo(8));
+        console.log(addTwo(5));
+
+        const addFive = createAdder(5);
+        console.log(addFive(10));
+
+}
+{
+        function createAdder(value){
+            const owner ="Mizan";
+            function add(){
+                console.info(`${owner} ${value}`);
+
+            }
+            add();
+        }
+        createAdder("Ganteng");
+}
+    </script>
+    
+</body>
+</html>
